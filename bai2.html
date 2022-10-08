@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function FarNumber(a,b,c,d){
+            a = parseInt(prompt("Nhập tử của phân số thứ 1"));
+            b = parseInt(prompt("Nhập mẫu của phân số thứ 1"));
+            c = parseInt(prompt("Nhập tử của phân số thứ 2"));
+            d = parseInt(prompt("Nhập mẫu của phân số thứ 2"));
+
+            if(a*d==b*c){
+                alert(a+"/"+b+" = "+c+ "/"+d);
+            }else{
+                alert("Hai phân số không bằng nhau");
+            }
+
+        }
+        FarNumber();
+    </script>
+</body>
+</html>

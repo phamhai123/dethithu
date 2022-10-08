@@ -12,7 +12,12 @@
 <body>
     <div class="row">
         <div class="col-sm-6"><button class="btn btn-success" onclick="submit()">Thêm</button></div>
-        <div class="col-sm-6"><input type="text" id="search"> <button class="btn btn-success" onclick="searchProduct()">Tìm kiếm</button></div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-6"><input type="text" class="form-control" id="search"></div>
+                <div class="col-sm-6"><button class="btn btn-success" onclick="searchProduct()">Tìm kiếm</button></div>
+            </div> 
+        </div>
     </div>
     
     
@@ -59,10 +64,10 @@
                     '<th>Sửa</th>\n'+
                     '<th>Xóa</th>\n'+
                 '</tr>\n'
-            for(i=0;i<arr.length;i++){
+            for(let i=0;i<arr.length;i++){
                 str +=
                         '<tr>\n'+
-                            '<td>'+i+'</td>\n'+
+                            '<td>'+(i+1)+'</td>\n'+
                             '<td>'+arr[i].getName()+'</td>\n'+
                             '<td>'+arr[i].getBrand()+'</td>\n'+
                             '<td>'+arr[i].getCost()+'</td>\n'+
